@@ -1,5 +1,6 @@
 class ServicePack < ApplicationRecord
-  belongs_to :project
+  has_many :assigns
+  has_many :projects, through: :assigns
 
   validates_presence_of :name, :threshold1, :threshold2, :expired_date, :start_date, :total_units
   validates_uniqueness_of :name
