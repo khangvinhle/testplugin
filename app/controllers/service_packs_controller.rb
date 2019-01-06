@@ -1,5 +1,10 @@
 class ServicePacksController < ApplicationController
-  def index; end
+
+  layout 'admin'
+
+  def index
+
+  end
 
   def edit; end
 
