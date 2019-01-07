@@ -1,4 +1,4 @@
-module OpenProject::ServicePack
+module OpenProject::TestPlugin
   module Patches
     module ProjectPatch
       def self.included(receiver)
@@ -11,4 +11,4 @@ module OpenProject::ServicePack
   end
 end
 
-Project.send(:include, OpenProject::Meeting::Patches::ProjectPatch)
+Project.send(:include, OpenProject::TestPlugin::Patches::ProjectPatch)

@@ -1,4 +1,3 @@
-module OpenProject::ServicePack
-  module Patches
-  end
+module OpenProject::TestPlugin::Patches
+
 end

@@ -21,7 +21,7 @@ module OpenProject::TestPlugin
         permission :assign_ServicePacks, {project_assign: [:assign]}
         permission :unassign_ServicePacks, {project_unassign: [:unassign]}
       end
-      
+
 
       menu :admin_menu,
            :service_packs,
@@ -42,6 +42,7 @@ module OpenProject::TestPlugin
            if: ->(project) {true}
     end
 
+    patches [:Project]
   end
 
 end
