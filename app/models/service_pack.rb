@@ -1,6 +1,7 @@
 class ServicePack < ApplicationRecord
   has_many :assigns
   has_many :projects, through: :assigns
+  has_many :enumerations, through: :mapping_rates
 
   validates_presence_of :name, :threshold1, :threshold2, :expired_date, :start_date, :total_units
   validates_uniqueness_of :name

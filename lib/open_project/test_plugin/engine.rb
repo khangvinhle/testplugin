@@ -42,7 +42,7 @@ module OpenProject::TestPlugin
            if: ->(project) {true}
     end
 
-    patches [:Project]
+    patches %i[Project Enumeration]
   end
 
 end
